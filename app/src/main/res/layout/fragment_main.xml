@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/prog_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminate="false" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:background="#ffacacac"
+        android:text="Start"
+        android:textSize="36dp"
+        android:textAllCaps="false"
+        android:textColor="#ff000000"
+        />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentRight="true"
+        android:background="#ffb3b3b3"
+        android:text="Stop"
+        android:textSize="36dp"
+        android:textAllCaps="false"
+        android:textColor="#ff000000"
+        />
+
+    <TextView
+        android:id="@+id/timerDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100sp"
+        android:textAlignment="center"
+        android:text="00:00"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
