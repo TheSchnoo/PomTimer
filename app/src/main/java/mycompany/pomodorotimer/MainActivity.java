@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -39,11 +40,17 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button startButton = (Button) findViewById(R.id.start_button);
+        Button stopButton = (Button) findViewById(R.id.stop_button);
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.prog_bar);
         Vibrator vibrate;
         long lastSeconds = 3;
 
         //progressBar.setMax(8); //modify to respond to setting change
+
+//        startButton.setOnClickListener(new View.OnClickListener() {
+//
+//                                       }
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
